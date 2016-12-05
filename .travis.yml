@@ -16,6 +16,7 @@ addons:
       - libtool
       - gettext
       - selinux-policy-dev
+      - libselinux1
       - pkg-config
 
 script:
