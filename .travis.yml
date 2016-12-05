@@ -10,6 +10,7 @@ addons:
   apt:
     packages:
       - autopoint
+      - xsltproc
 
 script:
  - ./autogen.sh --without-selinux --disable-man
