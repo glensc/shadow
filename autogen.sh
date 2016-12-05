@@ -8,4 +8,5 @@ autoreconf -v -f --install || exit 1
 	--enable-maintainer-mode \
 	--disable-shared \
 	--without-libpam \
+	--with-selinux \
 	"$@"
