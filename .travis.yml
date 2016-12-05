@@ -1,13 +1,23 @@
 language: c
 
 compiler:
- - gcc
- - clang
+  - gcc
+  - clang
 
-before_install:
- - sudo apt-get update -qq
- - sudo apt-get install -qq automake libtool make autopoint
+addons:
+  apt:
+    packages:
+      - build-essential
+      - automake
+      - autoconf
+      - autopoint
+      - libtool
+      - gettext
+      - selinux-policy-dev
+      - pkg-config
 
 script:
  - ./autogen.sh
  - make -j4
+
+# vim:et:ts=2:sw=2
