@@ -20,6 +20,6 @@ addons:
 
 script:
  - ./autogen.sh
- - make -j4
+ - make
 
 # vim:et:ts=2:sw=2
